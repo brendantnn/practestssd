@@ -8,13 +8,12 @@ services:
       - "8080:80"
 
   git-server:
-    build:
-      dockerfile: gitserver.Dockerfile
-      context: .
-    container_name: git-server
-    restart: always
-    ports:
-      - "3000:3000"
-    volumes:
-      - ./repos:/home/git
+      build:
+        dockerfile: gitserver.Dockerfile
+        context: .
+      restart: always
+      ports:
+        - "3000:3000"
+      volumes:
+        - ./repos:/var/www/git
 
