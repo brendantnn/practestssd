@@ -80,16 +80,15 @@ jobs:
           echo "Files in the current directory:"
           ls -ltra .
           echo "Files in the src directory:"
-          ls -ltra src/
-          echo "Files in the tests directory:"
-          ls -ltra tests/
+          echo "Files in the current directory (no src/ or tests/ expected):"
+          ls -ltra .
 
       - name: Run unit tests
         run: npm test
 
       - name: Start Node.js server
         run: |
-          nohup node src/server.js &  # Start the server in the background
+          nohup node index.js &
           sleep 5  # Give the server some time to start
 
       - name: Verify server is running
