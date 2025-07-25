@@ -20,8 +20,8 @@ services:
     image: postgres:latest
     container_name: sonarqube_db
     environment:
-      POSTGRES_USER: sonar
-      POSTGRES_PASSWORD: sonar
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: 2301782@sit.singaporetech.edu.sg
       POSTGRES_DB: sonarqube
     volumes:
       - postgresql:/var/lib/postgresql
