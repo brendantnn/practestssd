@@ -1,0 +1,9 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = true
+	symlinks = false
+	ignorecase = true
+[user]
+	name = Tan Sheng Le Brendan
+	email = 2301782@sit.singaporetech.edu.sg
